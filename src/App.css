@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+  margin: 2%;
+}
+
+.left {
+  float: left;
+  width: 30%;
+}
+
+.right {
+  float: right;
+  width: 55%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #0446aa;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0446aa;
+  cursor: pointer;
+}
+
+.image-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -60%);
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.img {
+  width: 200%;
+  height: auto;
+  transform: translate(100%, 0%);
+  right: 400px;
+}
+
+.center {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  width: 40%;
+  height: auto;
+  transform: translate(75%, 523%);
+}
+
+
