@@ -3,11 +3,14 @@ import Sliders from './components/Sliders';
 import ArtificialHorizon from './components/ArtificialHorizon';
 import { useState } from 'react';
 
+// Main component
 function App() {
+  // Roll state
   const [Roll, SetRoll] = useState(0)
+  //Pitch state
   const [Pitch, SetPitch] = useState(-365)
 
-
+  // Roll and pitch change event handlers
   const handleRollChange = (name: string, value: number) => {
     SetRoll(-value);
     console.log('Roll: ', Roll);
@@ -17,6 +20,7 @@ function App() {
     console.log('Pitch: ', Pitch);
   };
 
+  // Main return statement
   return (
     <div className='wrapper'>
         <h1>Artificial Horizon Playground</h1>
