@@ -22,7 +22,7 @@ const ArtificialHorizon: React.FC<Props> = (props: Props) => {
     <>
       <div className="image-container">
         <img src="src/assets/artihorzi.png" className="img" alt="Artificial Horizon" />
-        <img src="src/assets/thing.png" className='Crosshair'/>
+        <img src="src/assets/thing.png" className='crosshair'/>
       </div>
       <style>{css}</style>
     </>
