@@ -33,6 +33,7 @@ h1 {
   transition: .2s;
   transition: opacity .2s;
 }
+
 .slider::-webkit-slider-thumb {
   appearance: none;
   appearance: none;
