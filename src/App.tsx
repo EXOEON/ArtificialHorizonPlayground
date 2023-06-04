@@ -6,18 +6,18 @@ import { useState } from 'react';
 // Main component
 function App() {
   // Roll state
-  const [Roll, SetRoll] = useState(0)
+  const [roll, setRoll] = useState(0)
   //Pitch state
-  const [Pitch, SetPitch] = useState(-365)
+  const [pitch, setPitch] = useState(-365)
 
   // Roll and pitch change event handlers
   const handleRollChange = (name: string, value: number) => {
-    SetRoll(-value);
-    console.log('Roll: ', Roll);
+    setRoll(-value);
+    console.log('Roll: ', roll);
   };
   const handlePitchChange = (name: string, value: number) => {
-    SetPitch(5.2*value-365);
-    console.log('Pitch: ', Pitch);
+    setPitch(5.2*value-365);
+    console.log('Pitch: ', pitch);
   };
 
   // Main return statement
@@ -31,7 +31,7 @@ function App() {
           <Sliders name="Pitch" onSliderChange={ handlePitchChange }/>
       </div>
       <div className='right'>
-        <ArtificialHorizon Roll={ Roll } Pitch={ Pitch } />
+        <ArtificialHorizon roll={ roll } pitch={ pitch } />
       </div>
     </div>
     

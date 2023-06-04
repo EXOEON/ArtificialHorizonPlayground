@@ -2,8 +2,8 @@ import React from 'react';
 
 // Setting roll and pitch to Integers
 interface Props {
-  Roll: number;
-  Pitch: number;
+  roll: number;
+  pitch: number;
 }
 
 // Component
@@ -11,9 +11,9 @@ const ArtificialHorizon: React.FC<Props> = (props: Props) => {
   // CSS for the change of pitch and roll (contains curly braces)
   const css = `
     .img {
-      transform: rotate(${props.Roll}deg);
+      transform: rotate(${props.roll}deg);
       position: relative;
-      top: ${props.Pitch}px;
+      top: ${props.pitch}px;
     }
   `;
   
